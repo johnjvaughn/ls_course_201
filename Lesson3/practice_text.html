@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Practice -- Text Formatting</title>
+    <meta charset="utf-8" />
+    <style>
+      .main {
+        margin: 40px 20px;
+        font: italic bold 20px/140% "Trebuchet MS", Tahoma, Verdana, sans-serif;
+        text-align: justify;
+        text-indent: 4em;
+      }
+      article {
+        margin: 40px 20px;
+        font: 14px Helvetica, Arial, sans-serif;
+      }
+      article code {
+        font-family: monospace;
+        font-style: italic;
+        text-decoration: underline;
+        color: green;
+      }
+      article h1 {
+        font-family: Georgia;
+        color: blue;
+      }
+      article p {
+        line-height: 1.5;
+      }
+
+      .episode p {
+        margin: 40px 20px;
+        font-size: 18px;
+      }
+
+      .episode mark {
+        background-color: yellow;
+        font-family: Courier, monospace;
+        font-size: 12px;
+      }
+
+      .episode strong {
+        font-size: 15px;
+      }
+
+      .episode em {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+      .links {
+        margin: 40px 20px;
+      }
+      
+      .links a {
+        color: red;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p class='main'>
+      The long-tailed ground roller is a bird species found in arid spiny forests near the coast of southwestern Madagascar. Requiring shade and a deep layer of leaves on the ground, it has low population densities throughout its habitat. This species of ground roller relies primarily on its strong legs, as its wings are relatively weak. It is a medium-sized bird with a plump silhouette, dark brown upperparts with black streaks, light gray underparts, a white throat framed by black malar stripes, a black breastband, and sky-blue feathers at the edge of its wings and long tail. Calls are rarely made outside of the breeding season.
+    </p>
+
+    <article>
+      <header>
+        <h1>Finessing `feColorMatrix`</h1>
+      </header>
+      <p>
+        Harness the power of <code>feColorMatrix</code> to create detailed
+        filters, with Una Kravets as your guide.
+      </p>
+    </article>
+
+    <div class="episode">
+      <p>That episode was <mark>un<strong>be<em>lieve</em></strong>able</mark>!</p>
+    </div>
+
+    <p class="links">
+      The Creating Hyperlinks section of
+      <a href="http://learn.shayhowe.com/html-css/getting-to-know-html/#creating-hyperlinks" target="_blank">Getting to Know HTML</a>
+      discusses hyperlinks, or anchors. Be sure to work both "In Practice" sections; they pick up from
+      where you left off in an earlier reading assignment.
+    </p>
+
+  </body>
+</html>
