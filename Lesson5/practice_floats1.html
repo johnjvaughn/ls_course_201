@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: gray;
+      }
+      section {
+        background-color: white;
+        /* width: 800px; */
+        max-width: 1200px;
+        margin: 0 auto;
+        /* overflow: hidden; not needed with clearfix in the section:after below */
+      }
+      /* not needed with footer added that clears the float
+      section:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      */
+      article {
+        background-color: pink;
+        /* width: 500px; */
+        width: 70%;
+        padding-right: 30px;
+        box-sizing: border-box;
+      }
+      aside {
+        /* overflow: hidden; */
+        background-color: lightgreen;
+        /* float: right;
+        width: 300px; */
+        width: 15%;
+      }
+      .floatleft {
+        float: left;
+      }
+      .floatright {
+        float: right;
+      }
+      footer {
+        clear: both;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <aside class="floatleft">
+        <p>
+          Sed commodo lacus ac orci sodales, sit amet interdum orci molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent dictum, risus quis luctus pretium, lorem nibh volutpat diam, in congue ipsum felis nec mi. Vivamus congue turpis neque, vel ultricies quam luctus ac. Maecenas eu quam sit amet urna pulvinar fringilla et sit amet massa. Sed molestie felis ante. Aliquam erat volutpat.
+        </p>
+        <p>
+          Proin convallis ullamcorper magna, eget dictum enim efficitur blandit. Sed dapibus dolor augue, eleifend suscipit dui semper a. Fusce vel nisl id felis eleifend semper. Nulla quis lobortis quam, et finibus ante. Aenean maximus metus sed tellus viverra, nec porttitor mi commodo. Praesent et elit vel ante ultrices vestibulum non vitae mauris. Maecenas hendrerit maximus venenatis. Vestibulum mollis elit felis, in euismod ante mattis ac. Ut quam metus, suscipit eget libero in, ultrices interdum erat. Phasellus sed magna vel metus porta tincidunt. Aliquam auctor lorem vitae urna vestibulum bibendum. Donec a consectetur ipsum. Integer quis dolor sit amet urna eleifend iaculis. Quisque sed tortor aliquet, accumsan neque a, molestie lorem.
+        </p>
+      </aside>
+      <article class="floatleft">
+        <p>
+          Aenean eget neque in lacus vestibulum eleifend. Pellentesque maximus nisi magna, sed venenatis tortor pellentesque vitae. Sed aliquam tincidunt porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec at nisl quis tortor consectetur dictum. Curabitur tincidunt in magna ac interdum. Donec vel lacus metus. Duis lobortis pharetra fermentum. Praesent ante urna, pretium ut malesuada vel, finibus eu eros. Duis vestibulum, leo nec facilisis ullamcorper, urna nisi congue augue, eget dictum lacus urna vel erat. Phasellus et vestibulum dui, ac tempus diam. Morbi turpis erat, finibus semper nisl non, sollicitudin volutpat nibh. Cras auctor porttitor eros quis mollis. Maecenas elementum tincidunt tempor. Cras a massa sit amet velit dignissim interdum eget nec felis. Suspendisse dapibus ullamcorper sagittis.
+        </p>
+        <p>
+          Praesent consectetur tincidunt nunc, at eleifend urna faucibus quis. Aenean pulvinar velit eu ipsum fermentum commodo facilisis eget purus. Aliquam pellentesque id erat sit amet euismod. Phasellus eget metus felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lacus felis, aliquet et dui a, pretium dapibus metus. Fusce imperdiet tortor ex, quis semper dui rhoncus at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque finibus metus arcu, sit amet ullamcorper ex accumsan at.
+        </p>
+        <p>
+          Donec suscipit dapibus augue. Proin viverra neque et auctor interdum. Pellentesque consequat ullamcorper arcu rhoncus tempor. Nunc sit amet tincidunt ex, quis tempor arcu. Integer at pellentesque tortor. Donec venenatis massa vitae augue eleifend, ac lobortis libero suscipit. In volutpat maximus nibh, ut blandit neque vulputate ac. Cras lectus purus, venenatis vitae ligula sed, ultrices sagittis lacus. Fusce vitae lacus nec felis varius mattis. Duis in porta lectus. Aenean ut nisi mattis, porta nibh sed, porttitor ligula. Donec pretium enim non orci interdum porttitor.
+        </p>
+        <p>
+          Ut porta diam eu odio aliquam, et ultricies odio vestibulum. Curabitur tincidunt eleifend tincidunt. Aenean porttitor quis risus in tincidunt. Nullam suscipit viverra ante quis molestie. Ut eget tortor urna. Duis gravida tempus porttitor. Morbi euismod dolor in elit tristique, vitae laoreet erat bibendum.
+        </p>
+      </article>
+      <aside class="floatright">
+        <p>
+          Quisque dignissim dui suscipit lobortis eleifend. Suspendisse bibendum dui mauris, id tincidunt urna faucibus vel. Nulla pretium a erat ut hendrerit. Fusce bibendum consectetur mi, id auctor ante sollicitudin sed. Aliquam imperdiet tortor odio, non molestie ante vulputate sed. Maecenas non massa nec felis fermentum venenatis at ut mauris. Aenean faucibus eleifend dolor, sed malesuada ipsum auctor id. Phasellus a metus ex. Praesent tincidunt suscipit nunc, in facilisis odio gravida sit amet. Nam mattis odio eget tortor eleifend, a pellentesque massa volutpat. Phasellus congue libero diam, et sollicitudin est venenatis a. Aenean facilisis nulla risus, tincidunt varius libero tempor quis. Nullam neque quam, imperdiet et velit at, rhoncus auctor mi. Proin ac massa pellentesque, scelerisque tellus sed, hendrerit mauris. Nam id egestas lectus, et dictum augue. Proin et pellentesque enim.
+        </p>
+        <p>
+          Morbi quis pharetra elit, nec viverra elit. Duis nulla purus, tristique vitae placerat et, dictum quis massa. Nam nec justo vestibulum, convallis sapien at, posuere nulla. Nunc metus tellus, placerat eu volutpat non, dictum quis metus. Sed vitae ante urna. Aliquam semper pharetra sem, a finibus nunc fermentum at. Morbi gravida pulvinar lorem sed imperdiet. Nulla efficitur varius justo, ac varius mi ornare sit amet. Integer laoreet neque ac libero suscipit interdum.
+        </p>
+      </aside>
+      <footer>
+          Ut dolor lacus, mollis lobortis nisl commodo, vulputate lacinia felis. Nulla enim arcu, porttitor eu nunc vitae, fringilla bibendum nulla. Vestibulum ultrices felis mauris, et consequat sapien consequat non. Donec nec venenatis erat. Maecenas sollicitudin dui leo, vel fringilla libero cursus vitae. Nulla ut erat mattis, varius elit id, accumsan orci. Mauris sagittis nulla eu egestas laoreet. Duis eu nibh vel massa volutpat tempus. Suspendisse et metus congue, finibus felis nec, hendrerit risus. Duis vitae dui ultricies, convallis tellus non, aliquet nisi. Morbi ante quam, varius eget velit in, fringilla viverra lectus. Duis semper a libero a euismod. Nam lacinia bibendum nisl, nec malesuada nisl sagittis lobortis. Phasellus interdum, massa in condimentum feugiat, orci ligula lacinia diam, eget hendrerit lacus metus elementum erat. Morbi dictum, felis eget sollicitudin convallis, lectus nunc facilisis nisi, et sollicitudin est libero vitae lectus.
+      </footer>
+    </section>
+  </body>
+</html>
