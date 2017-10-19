@@ -1,0 +1,89 @@
+@import url("whitespace-reset.css");
+
+/* Custom Styles */
+
+body {
+  background-color: #dae3c9;
+  background: linear-gradient(180deg, #d1dbbe, #ffffff);
+  color: #3e606f;
+  font: normal 18px "Roboto Condensed", Helvetica, Arial, sans-serif;
+  padding: 40px;
+}
+
+header,
+main,
+footer {
+  box-sizing: border-box;
+  width: 960px;
+}
+
+header {
+  padding: 0 20px 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+header h1 {
+  background: transparent url("camera_logo.png") 0 0 no-repeat;
+  color: #193441;
+  float: left;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 40px 0 45px 115px;
+}
+header nav {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+header nav li {
+  display: inline-block;
+}
+header nav a {
+  background-color: #fcfff5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+  color: #91aa9d;
+  display: block;
+  font-size: 18px;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 130px;
+}
+header nav a.active {
+  background-color: #91aa9d;
+  color: #fcfff5;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+main {
+  background-color: #fff;
+  box-shadow: 0 5px 5px #b8b8b7;
+  overflow: hidden;
+  padding: 30px;
+}
+
+p {
+  padding-top: 20px;
+}
+
+.mainimage {
+  margin-bottom: 30px;
+  width: 900px;
+}
+.articleimage {
+  float: right;
+  padding: 20px 0 0 40px;
+  width: 330px;
+}
+
+footer {
+  font-size: 14px;
+  padding-top: 15px;
+}
