@@ -7,13 +7,14 @@ body {
   background: linear-gradient(180deg, #d1dbbe, #ffffff);
   color: #3e606f;
   font: normal 18px "Roboto Condensed", Helvetica, Arial, sans-serif;
-  padding: 40px;
+  padding: 20px;
 }
 
 header,
 main,
 footer {
   box-sizing: border-box;
+  margin: 0 auto;
   width: 960px;
 }
 
@@ -64,7 +65,7 @@ h2 {
 
 main {
   background-color: #fff;
-  box-shadow: 0 5px 5px #b8b8b7;
+  box-shadow: 0 5px 5px #b5b5b5;
   overflow: hidden;
   padding: 30px;
 }
@@ -73,11 +74,11 @@ p {
   padding-top: 20px;
 }
 
-.mainimage {
+img.mainimage {
   margin-bottom: 30px;
   width: 900px;
 }
-.articleimage {
+main figure {
   float: right;
   padding: 20px 0 0 40px;
   width: 330px;
