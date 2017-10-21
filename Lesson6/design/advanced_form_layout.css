@@ -1,0 +1,104 @@
+/*@import url("whitespace-reset.css");*/
+
+body {
+  background: rgb(0, 0, 0);
+  color: rgb(102, 102, 102);
+  font: bold 14px Helvetica, Arial, sans-serif;
+}
+form {
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px;
+  width: 620px;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+fieldset {
+  background: #ececec;
+  border: none;
+  border-left: 5px solid rgb(204, 204, 204);
+  box-sizing: border-box;
+  margin: -21px 0 0 0;
+  padding: 20px 20px 30px 20px;
+}
+fieldset:last-of-type {
+  margin-top: -11px;
+  padding-top: 10px;
+}
+legend {
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 16px;
+  padding: 0 0 30px 10px;
+  position: relative;
+  top: 55px;
+}
+dl {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px 10px 10px;
+  width: 100%;
+}
+dt {
+  display: block;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}
+dt.empty {
+  display: none;
+  padding: 0;
+}
+dd {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border: 1px solid rgb(0, 102, 204);
+  border-radius: 4px;
+  height: 40px;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+input[type="text"]:placeholder {
+  color: rgb(0, 0, 0);
+}
+textarea {
+  height: 110px;
+  resize: vertical;
+}
+input[type="checkbox"] {
+  float: left;
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  background: rgb(0, 102, 204);
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  height: 45px;
+  margin: 10px 0 0 10px;
+  padding: 0 30px;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: rgb(96, 149, 203);
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-3 {
+  width: 33.3333%;
+}

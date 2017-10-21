@@ -1,0 +1,71 @@
+/*@import "whitespace-reset.css"*/
+
+body {
+  background: #ececec;
+  font: bold 16px Garamond, Helvetica, Arial, sans-serif;
+}
+fieldset {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+dl,
+ul {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+}
+dt {
+  display: block;
+  margin: 0;
+  padding: 10px;
+}
+dd {
+  font: normal 14px Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid #0066cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font: inherit;
+  height: 40px;
+  padding: 5px 8px;
+  width: 100%;
+}
+textarea {
+  height: auto;
+  resize: vertical;
+}
+input[type="submit"],
+input[type="reset"] {
+  background: #bbb;
+  border: 1px solid #0066cc;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px #333;
+  font: inherit;
+  margin: 10px;
+  padding: 10px 20px;
+}
+li {
+  display: inline;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.horizontal {
+  padding-top: 10px;
+}
+.horizontal label {
+  display: inline-block;
+}
+

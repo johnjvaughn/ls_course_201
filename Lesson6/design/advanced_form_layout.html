@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Advanced Form Layout</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="advanced_form_layout.css">
+  </head>
+  <body>
+
+    <form action="#" method="post">
+      <h1>Create Your Profile</h1>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <dl class="col-1-2">
+          <dt>
+            <label for="first_name">Your Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="first_name" id="first_name" placeholder="First">
+          </dd>
+        </dl><!--
+     --><dl class="col-1-2">
+          <dt><!-- no last name label --></dt>
+          <dd>
+            <input type="text" name="last_name" id="last_name" placeholder="Last">
+          </dd>          
+        </dl>
+        <dl>
+          <dt>
+            <label for="email">Email</label>
+          </dt>
+          <dd>
+            <input type="email" name="email" id="email">
+          </dd>
+        </dl>
+      </fieldset>
+
+      <fieldset>
+        <legend>Social Media Accounts</legend>
+        <dl class="col-1-3">
+          <dt>
+            <label for="facebook">Facebook</label>
+          </dt>
+          <dd>
+            <input type="text" name="facebook" id="facebook">
+          </dd>
+        </dl><!--
+     --><dl class="col-1-3">
+          <dt>
+            <label for="twitter">Twitter</label>
+          </dt>
+          <dd>
+            <input type="text" name="twitter" id="twitter">
+          </dd>
+        </dl><!--
+     --><dl class="col-1-3">
+          <dt>
+            <label for="linkedin">LinkedIn</label>
+          </dt>
+          <dd>
+            <input type="text" name="linkedin" id="linkedin">
+          </dd>      
+        </dl>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Info</legend>
+        <dl>
+          <dt>
+            <label for="profile_name">Profile Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="profile_name" id="profile_name">
+          </dd>
+        </dl>
+        <dl class="col-1-2">
+          <dt>
+            <label for="password">Password</label>
+          </dt>
+          <dd>
+            <input type="password" name="password" id="password">
+          </dd>
+        </dl><!--
+     --><dl class="col-1-2">
+          <dt>
+            <label for="password2">Confirm Password</label>
+          </dt>
+          <dd>
+            <input type="password" name="password2" id="password2">
+          </dd>
+        </dl>
+      </fieldset>
+
+      <fieldset>
+        <legend>Bio</legend>
+        <dl>
+          <dt><!-- no bio label --></dt>
+          <dd>
+            <textarea rows="5" cols="60"></textarea>
+          </dd>
+        </dl>
+      </fieldset>
+
+      <fieldset>
+        <legend><!-- no legend title --></legend>
+        <dl>
+          <dt class="empty"><!-- no terms/conditions label --></dt>
+          <dd>
+            <label>
+              <input type="checkbox" name="terms">
+              I agree to treat other users with respect, and will not say anything at all if
+              I have nothing nice to say.
+            </label>
+          </dd>
+        </dl>
+        <input type="submit" value="Create Account">
+      </fieldset>
+    </form>
+  </body>
+</html>
