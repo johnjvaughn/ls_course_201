@@ -1,0 +1,142 @@
+body {
+  background-color: #ccc;
+  font: normal 20px/1.5em Avenir, Helvetica, Arial, sans-serif;
+}
+main,
+header,
+footer {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  width: 1200px;
+}
+
+header {
+  background: url("images/bg_body.gif") repeat;
+  padding: 80px 0 50px 0;
+}
+header nav {
+  font-size: 26px;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+header nav ul {
+  padding: 0;
+}
+header nav li {
+  display: inline;
+  padding: 0 40px;
+}
+header nav a {
+  color: #cacaca;
+  text-decoration: none;
+}
+header nav a.active {
+  color: #6db9ff;
+  font-weight: bold;
+}
+
+main {
+  background: #fff;
+  color: #45494d;
+  padding: 120px 100px 0 100px;
+}
+article {
+  padding-bottom: 90px;
+}
+article img {
+  padding-bottom: 20px;
+}
+article p {
+  padding: 0 160px 0 160px;
+}
+h1 {
+  padding: 0 0 60px 0;
+}
+h2 {
+  color: #45494d;
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+h2:before,
+h2:after {
+  color: #2f2840;
+  content: "\2022";
+  padding: 0 30px 0 30px;
+}
+h3 {
+  color: #3e59b2;
+  font-size: 24px;
+}
+
+footer {
+  background: #e7e7e7;
+  color: #b6b6b6;
+  padding: 60px 300px 30px 300px;
+}
+footer p {
+  margin: 0 75px;
+}
+footer ul {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+footer li {
+  display: inline;
+  padding: 0 125px 0 0;
+}
+footer li:last-of-type {
+  padding: 0;
+}
+footer li a {
+  display: inline-block;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+  border-radius: 100%;
+  height: 46px;
+  width: 46px;
+}
+footer li a.twitter {
+  background-position: 0 0;
+}
+footer li a.facebook {
+  background-position: 0 33.3333%;
+}
+footer li a.email {
+  background-position: 0 66.6667%;
+}
+footer li a.instagram {
+  background-position: 0 100%;
+}
+
+ul.team_list {
+  margin: 0;
+  padding: 0 0 145px 0;
+}
+ul.team_list li {
+  display: inline;
+  padding: 0 30px;
+}
+ul.team_list li a {
+  box-sizing: border-box;
+  color: #3e59b2;
+  display: inline-block;
+  font-size: 24px;
+  height: 210px;
+  padding-top: 180px;
+  text-decoration: none;
+  width: 140px;
+}
+a#kevin {
+  background: transparent url("images/img_kevin.jpg") 0 0 no-repeat;
+}
+a#louis {
+  background: transparent url("images/img_louis.jpg") 0 0 no-repeat;
+}
+a#kasper {
+  background: transparent url("images/img_kasper.jpg") 0 0 no-repeat;
+}
+a#chris {
+  background: transparent url("images/img_chris.jpg") 0 0 no-repeat;
+}
+x
