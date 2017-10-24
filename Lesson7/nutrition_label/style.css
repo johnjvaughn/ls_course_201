@@ -1,0 +1,96 @@
+
+html {
+  background: #ccc;
+  font: normal 28px Helvetica, Arial, sans-serif;
+}
+body {
+  background: #fff;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 10px 10px 10px;
+  width: 680px;
+}
+header {
+  border-bottom: 28px solid #000;
+  padding-bottom: 5px;
+}
+main {
+  padding-top: 5px;
+}
+footer {
+  border-top: 28px solid #000;
+  padding-top: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+h2,
+h3 {
+  border-bottom: 1px solid #000;
+  font-size: .7rem;
+  font-weight: 900;
+  height: 45px;
+  padding: 5px 0 0 0;
+}
+h3 {
+  text-align: right;
+}
+article {
+  border-bottom: 14px solid #000;
+}
+article dd {
+  padding-top: 6px;
+}
+
+dl {
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 45px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+main dl:last-of-type {
+  border: none;
+  padding: 0;
+}
+
+dt {
+  float: left;
+}
+dd {
+  float: right;
+}
+
+footer dt,
+footer dd {
+  padding-top: 5px;
+}
+table {
+  border-collapse: collapse;
+  font-size: .85rem;
+  letter-spacing: .4px;
+  margin-top: 5px;
+  width: 100%;
+}
+caption {
+  padding: 0 15px;
+  text-align: left;
+  text-indent: -16px;
+}
+thead th {
+  border-bottom: 1px solid #000;
+}
+th {
+  font-weight: normal;
+  text-align: left;
+}
+strong {
+  font-weight: 900;
+}
+.indent {
+  text-indent: 40px;
+}
