@@ -1,0 +1,50 @@
+body {
+  background: #141414;
+}
+main,
+header {
+  background: #333;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 600px;
+  overflow: hidden;
+}
+header {
+  padding: 50px 0 20px 0;
+}
+h1 {
+  color: #f0f0f0;
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+}
+.feature {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+.feature img {
+  border: 15px solid #fff;
+  box-sizing: border-box;
+  width: 100%;
+}
+.feature figcaption {
+  color: #fff;
+  padding: 20px 0 0 0;
+}
+.thumbnails {
+  padding: 5px;
+}
+.thumbnails li {
+  box-sizing: border-box;
+  float: left;
+  padding: 15px;
+  width: 25%;
+}
+.thumbnails img {
+  background: #fff;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+  width: 100%;
+}
