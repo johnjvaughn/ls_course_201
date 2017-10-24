@@ -44,8 +44,8 @@ main {
 }
 .column {
   margin: 0 auto;
-  width: 1000px;
   max-width: 100%;
+  width: 1000px;
 }
 article {
   padding-bottom: 90px;
@@ -54,13 +54,20 @@ article p {
   padding: 20px 100px;
 }
 article figure {
+  max-width: 1000px;
   padding-bottom: 25px;
 }
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
 
-h1 {
+h1 a {
   background: transparent url("images/logo.png") 0 0 no-repeat;
+  display: inline-block;
   height: 243px;
   margin: 0 auto;
+  text-indent: -9999px;
   width: 298px;
 }
 h2 {
@@ -118,11 +125,12 @@ footer li a.instagram {
 }
 
 ul.team_list {
-  padding: 0 0 145px 0;
+  padding: 0 0 70px 0;
 }
 ul.team_list li {
-  display: inline;
-  padding: 0 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 2%;
 }
 ul.team_list li a {
   box-sizing: border-box;
@@ -133,6 +141,10 @@ ul.team_list li a {
   padding-top: 180px;
   text-decoration: none;
   width: 140px;
+}
+ul.team_list li img {
+  display: block;
+  margin: 0 0 20px 0;
 }
 a#kevin {
   background: transparent url("images/img_kevin.jpg") 0 0 no-repeat;
@@ -147,9 +159,29 @@ a#chris {
   background: transparent url("images/img_chris.jpg") 0 0 no-repeat;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 875px) {
+  ul.team_list li {
+    padding: 0 0 30px 0;
+    width: 48%;
+  }
+  ul.team_list li img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {  
   header nav {
-    padding-top: 30px;
+    font-size: 22px;
+    padding-top: 40px;
+  }
+  header nav li {
+    padding: 0 30px;
+  }
+  header h1 a {
+    display: block;
+    background-size: contain;
+    height: 163px;
+    width: 200px;
   }
   main {
     padding: 80px 20px 0 20px;
@@ -161,34 +193,54 @@ a#chris {
   footer li {
     padding: 0 32px;
   }
-
 }
-@media screen and (max-width: 480px) {
+
+@media (max-width: 480px) {
   header {
     overflow: auto;
+    padding: 20px 0 10px 0;
   }
   header h1 {
-    content: "";
+    display: inline-block;
     float: left;
+    margin: 18px 0 0 10px;    
   }
- 
+  header h1 a {
+    background-position: -20px 0;
+    background-size: 90px auto;
+    color: #fff;
+    height: 40px;
+    padding: 10px 0 0 55px;
+    text-indent: 0;
+    text-decoration: none;
+    width: auto;
+  }
   header nav {
     float: right;
-    padding-top: 30px;
+    font-size: 16px;
+    padding-top: 0;
   }
   header nav li {
     display: list-item;
-    padding: 0 40px;
+    padding: 0 20px;
+    text-align: right;
   }
   
   main {
     padding: 80px 20px 0 20px;
   }
+  h2 {
+    font-size: 26px;
+  }
+  h2:before,
+  h2:after {
+    vertical-align: 0;
+  }
   article p {
     padding: 20px 20px;
     text-align: justify;
   }
   footer li {
-    padding: 0 32px;
+    padding: 0 18px;
   }
 }
