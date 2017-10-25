@@ -4,15 +4,14 @@ html {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  font-size: 20px;
-  font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+  font: normal 20px "Myriad Pro", Helvetica, Arial, sans-serif;
   color: rgb(69, 73, 77);
   background: rgb(255, 255, 255);
   line-height: 1.4;
 }
 
 header {
-  padding: 140px 0 50px 0;
+  padding: 120px 0 50px 0;
   background: rgb(61, 61, 61);
   color: rgb(255, 255, 255);
   text-align: center;
@@ -22,40 +21,40 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: normal;
   letter-spacing: .4em;
   text-transform: uppercase;
 }
 header figure {
   margin: 40px 0;
 }
-header ul {
-  margin-top: 90px;
+nav {
+  margin: 120px 0 10px 0;
 }
-header li {
+nav li {
   display: inline-block;
   padding: 0 18px;
   text-align: center;
 }
-header li a {
+nav a {
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
 }
-header .active {
+nav .active {
   color: rgb(80, 195, 175);
 }
 
 main {
-  margin: 40px 0 ;
+  margin: 40px 0;
   overflow: auto;
 }
 section {
   box-sizing: border-box;
   float: left;
   width: 65%;
-  padding: 40px 40px 40px 11.5%;
+  padding: 40px 3% 40px 5%;
 }
 h2 {
   font-size: 28px;
@@ -91,18 +90,19 @@ button[disabled] {
 aside {
   box-sizing: border-box;
   float: right;
-  width: 230px;
-  margin: 40px 80px 0 0;
-  padding: 35px 33px 35px 37px;
+  max-width: 230px;
+  width: 30%;
+  margin: 40px 5% 0 0;
+  padding: 35px 37px 35px 37px;
   color: rgb(120, 123, 128);
   background: rgb(246, 247, 248);
-  font-size: 12px;
+  font-size: 14px;
   overflow: hidden;
 }
 h3 {
   padding-bottom: 25px;
   color: rgb(64, 71, 78);
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 aside ul {
@@ -148,7 +148,6 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 2px;
   padding: 5px;
-  /*color: #ccc;*/
 }
 textarea {
   height: 140px;
@@ -158,8 +157,38 @@ textarea {
 }
 
 footer {
-  margin: 0 80px;
+  margin: 0 5%;
   border-top: 1px solid rgb(208, 208, 208);
-  padding: 20px 0 50px 0;
+  padding: 20px 5% 50px 5%;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 30px 0 10px 0;
+  }
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    float: none;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  aside {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+  aside ul {
+    margin: 0;
+  }
+  .block {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
 }
