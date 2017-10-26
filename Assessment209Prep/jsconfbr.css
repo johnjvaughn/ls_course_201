@@ -1,0 +1,176 @@
+@import url("whitespace-reset.css");
+
+html {
+  color: #444;
+  font: normal 15px "Open Sans", Arial, sans-serif;
+  text-align: center;
+}
+a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  text-align: center;
+}
+.title {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  height: 428px;
+  padding-top: 170px;
+  background: transparent url("http://2014.jsconfbr.org/images/front.jpg") 0 0 no-repeat;
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-weight: normal;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+h3 {
+  padding: 50px 0 30px 0;
+  font-size: 48px;
+  font-weight: 200;
+}
+h4 {
+  padding: 10px;
+  color: #008000;
+  font-size: 24px;
+}
+h5 {
+  color: #008000;
+  font-size: 18px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-top: 10px solid #eee;
+  background: #fff;
+  text-transform: uppercase;
+  line-height: 2.5em;
+  z-index: 1;
+}
+li {
+  display: inline-block;
+}
+nav a {
+  padding: 0 25px;
+  font-size: 12px;
+
+}
+
+#tickets {
+  margin-top: 500px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#tickets p {
+  font-size: 15px;
+}
+button {
+  margin: 10px;
+  border: none;
+  padding: 8px 30px;
+  background: #008000;
+  font: inherit;
+}
+button:hover {
+  background: #006000;
+}
+button a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+button a:hover {
+  text-decoration: none;
+}
+
+#speakers {
+  border-bottom: 1px solid #ddd;
+}
+#speakers li {
+  margin: 5px;
+}
+#speakers figure {
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+#speakers figcaption {
+  height: 120px;
+  padding-top: 20px;
+}
+
+#schedule {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 60px;
+}
+#schedule table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 92%;
+  max-width: 1000px;
+  font-size: 24px;
+}
+#schedule td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+#schedule td:first-of-type {
+  width: 100px;
+}
+#schedule td:last-of-type {
+  width: 120px;
+}
+#schedule a img {
+  display: block;
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.info_section {
+  font-size: 16px;
+  text-align: left;
+}
+.info_section h3 {
+  text-align: center;
+}
+.info_section p {
+  padding: 0 5%;
+  text-align: left;
+}
+.info_section p + p {
+  margin-top: 1.5em;
+}
+.info_section button {
+  margin: 10px 5%;
+}
+.info_section a {
+  color: #008000;
+  font-weight: bold;
+}
+.info_section .map {
+  box-sizing: border-box;
+  height: 200px;
+  margin: 20px 0;
+  padding: 50px;
+  background: #88f;
+  font: bold 60px serif;
+}
