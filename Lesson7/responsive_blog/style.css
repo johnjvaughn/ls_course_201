@@ -10,19 +10,20 @@ body {
   background: rgb(255, 255, 255);
   line-height: 1.4;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-header {
+/* Header */
+body > header {
   padding: 120px 0 50px 0;
   background: rgb(61, 61, 61);
   color: rgb(255, 255, 255);
   text-align: center;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-}
 h1 {
-  font-size: 64px;
+  font-size: 68px;
   font-weight: normal;
   letter-spacing: .4em;
   text-transform: uppercase;
@@ -30,6 +31,8 @@ h1 {
 header figure {
   margin: 40px 0;
 }
+
+/* Header Nav */
 nav {
   margin: 120px 0 10px 0;
 }
@@ -43,10 +46,14 @@ nav a {
   font-size: 20px;
   text-transform: uppercase;
 }
+nav a:hover {
+  color: rgb(245, 220, 57);
+}
 nav .active {
   color: rgb(80, 195, 175);
 }
 
+/* Main Section */
 main {
   margin: 40px 0;
   overflow: auto;
@@ -58,8 +65,11 @@ main {
   padding: 40px 3% 40px 5%;
 }
 h2 {
-  font-size: 28px;
+  font-size: 36px;
   padding-bottom: 25px;
+}
+h2 a:hover {
+  color: rgb(80, 195, 175);
 }
 address {
   padding-bottom: 40px;
@@ -88,6 +98,7 @@ button[disabled] {
   cursor: auto;
 }
 
+/* Sidebar */
 aside {
   box-sizing: border-box;
   float: right;
@@ -113,6 +124,9 @@ aside a {
   display: inline-block;
   line-height: 22px;
 }
+aside a:hover {
+  color: rgb(80, 195, 175);
+}
 aside a:before {
   box-sizing: border-box;
   content: "";
@@ -125,6 +139,7 @@ aside p {
   text-align: justify;
 }
 
+/* Comment Sections */
 .comment + .comment {
   padding-top: 80px;
 }
@@ -140,14 +155,18 @@ aside p {
   margin: -5px 0 0 -5px;
 }
 
+/* Comment Form */
+form label {
+  font-weight: bold;
+}
 input,
 textarea {
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 100%; height: 38px;
   margin-bottom: 20px;
   border: 1px solid rgb(192, 192, 192);
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 5px;
 }
 textarea {
@@ -157,6 +176,7 @@ textarea {
   font-size: 14px;
 }
 
+/* Footer */
 footer {
   margin: 0 5%;
   border-top: 1px solid rgb(208, 208, 208);
@@ -164,15 +184,22 @@ footer {
   font-size: 12px;
 }
 
+/* Responsive Styles for smaller-width screens */
 @media (max-width: 768px) {
-  header {
+  body > header {
     padding: 30px 0 10px 0;
   }
   h1 {
     font-size: 48px;
   }
+  h2 {
+    font-size: 24px;
+  }
 }
 @media (max-width: 600px) {
+  figure img {
+    width: 90%;
+  }
   #column {
     float: none;
     width: auto;
@@ -180,8 +207,9 @@ footer {
     padding-right: 25px;
   }
   aside {
-    max-width: none;
+    float: none;
     width: 100%;
+    max-width: none;
     margin: 0;
   }
   aside ul {
@@ -197,16 +225,12 @@ footer {
   header figure {
     margin: 20px 0;
   }
-  figure img {
-    width: 90%;
-  }
   nav {
     margin: 70px 0 0 0;
   }
-
   nav li {
     width: 35%;
-    padding: 0 18px;
+    padding: 0;
   }
   aside {
     background: rgb(255, 255, 255);
@@ -219,5 +243,4 @@ footer {
     padding: 20px;
     background: rgb(246, 247, 248);
   }
-
 }
