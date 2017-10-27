@@ -40,6 +40,7 @@ h2 {
 }
 h3 {
   padding: 50px 0 30px 0;
+  text-align: center;
   font-size: 48px;
   font-weight: 200;
 }
@@ -51,6 +52,10 @@ h4 {
 h5 {
   color: #008000;
   font-size: 18px;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 600;
 }
 nav {
   position: fixed;
@@ -72,17 +77,47 @@ nav a {
 
 }
 
+.info_section {
+  border-bottom: 1px solid #ddd;
+  padding: 0 5% 60px 5%;
+  font-size: 16px;
+  text-align: left;
+}
+.info_section p {
+  text-align: left;
+}
+.info_section p + p {
+  margin-top: 1.5em;
+}
+.info_section p a {
+  color: #008000;
+  font-weight: bold;
+}
+.map {
+  box-sizing: border-box;
+  height: 200px;
+  margin: 20px 0;
+  padding: 50px;
+  background: #88f;
+  font: bold 60px serif;
+}
+
 #tickets {
   margin-top: 500px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 50px;
   text-align: center;
 }
 #tickets p {
-  font-size: 15px;
+  text-align: inherit;
 }
+#speakers {
+  text-align: center;
+}
+#sponsors {
+  padding: 0 5%;
+}
+
 button {
-  margin: 10px;
+  margin: 10px 0;
   border: none;
   padding: 8px 30px;
   background: #008000;
@@ -100,77 +135,78 @@ button a:hover {
   text-decoration: none;
 }
 
-#speakers {
-  border-bottom: 1px solid #ddd;
-}
-#speakers li {
+li {
   margin: 5px;
 }
-#speakers figure {
+figure {
   display: inline-block;
   border: 1px solid #ddd;
 }
-#speakers figcaption {
+figcaption {
   height: 120px;
   padding-top: 20px;
 }
-
-#schedule {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 60px;
+.sponsors ul {
+  padding-bottom: 30px;
 }
-#schedule table {
+.sponsors li {
+  padding-right: 30px;
+}
+.gold_sponsors li {
+  padding-right: 60px;
+}
+.silver_sponsors li img {
+  width: 240px;
+}
+.support_sponsors li img {
+  width: 180px;
+}
+
+table {
   margin: 0 auto;
   border-collapse: collapse;
-  width: 92%;
+  width: 100%;
   max-width: 1000px;
   font-size: 24px;
 }
-#schedule td {
+td {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px;
   text-align: left;
 }
-#schedule td:first-of-type {
+td:first-of-type {
   width: 100px;
 }
-#schedule td:last-of-type {
+td:last-of-type {
   width: 120px;
 }
-#schedule a img {
+table a img {
   display: block;
   height: 100px;
   width: auto;
   margin: 0 auto;
 }
 
-.info_section {
-  font-size: 16px;
+footer {
+  height: 315px;
+  padding-bottom: 25px;
+  background-size: cover !important;
+  background: url("http://2014.jsconfbr.org/images/people.jpg") no-repeat center 23%;
+}
+.team {
+  border: none;
+  padding: 10px 5%;
+  background: rgba(0, 0, 0, .7);
+  color: #fff;
   text-align: left;
+  font-weight: 300;
 }
-.info_section h3 {
-  text-align: center;
+footer h1 {
+  padding: 30px;
+  font-size: 48px;
+  font-weight: 200;
 }
-.info_section p {
-  padding: 0 5%;
-  text-align: left;
-}
-.info_section p + p {
-  margin-top: 1.5em;
-}
-.info_section button {
-  margin: 10px 5%;
-}
-.info_section a {
-  color: #008000;
-  font-weight: bold;
-}
-.info_section .map {
-  box-sizing: border-box;
-  height: 200px;
-  margin: 20px 0;
-  padding: 50px;
-  background: #88f;
-  font: bold 60px serif;
+footer h2 {
+  font-weight: 600;
 }
