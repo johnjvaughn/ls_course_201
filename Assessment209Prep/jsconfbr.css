@@ -18,12 +18,12 @@ header {
 }
 .title {
   position: absolute;
-  top: 50px;
-  right: 0;
-  left: 0;
+  box-sizing: border-box;
   height: 428px;
-  padding-top: 170px;
-  background: transparent url("http://2014.jsconfbr.org/images/front.jpg") 0 0 no-repeat;
+  top: 55px; right: 0; left: 0;
+  margin-bottom: 55px;
+  padding-top: 150px;
+  background: url("http://2014.jsconfbr.org/images/front.jpg") center no-repeat;
 }
 
 h1,
@@ -59,10 +59,11 @@ h6 {
 }
 nav {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  top: 0; right: 0; left: 0;
+  box-sizing: border-box;
   border-top: 10px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 3px 0;
   background: #fff;
   text-transform: uppercase;
   line-height: 2.5em;
@@ -78,8 +79,10 @@ nav a {
 }
 
 .info_section {
+  max-width: 960px;
+  margin: 0 auto;
   border-bottom: 1px solid #ddd;
-  padding: 0 5% 60px 5%;
+  padding: 0 30px 60px 30px;
   font-size: 16px;
   text-align: left;
 }
@@ -93,10 +96,14 @@ nav a {
   color: #008000;
   font-weight: bold;
 }
+#location {
+  border: none;
+  padding-bottom: 0;
+}
 .map {
   box-sizing: border-box;
   height: 200px;
-  margin: 20px 0;
+  margin: 20px -30px;
   padding: 50px;
   background: #88f;
   font: bold 60px serif;
@@ -109,47 +116,59 @@ nav a {
 #tickets p {
   text-align: inherit;
 }
-#speakers {
-  text-align: center;
-}
-#sponsors {
-  padding: 0 5%;
-}
 
-button {
+.btn {
+  display: inline-block;
   margin: 10px 0;
   border: none;
   padding: 8px 30px;
   background: #008000;
-  font: inherit;
-}
-button:hover {
-  background: #006000;
-}
-button a {
   color: #fff;
   font-size: 16px;
   font-weight: bold;
 }
-button a:hover {
+.btn:hover {
+  background: #006000;
   text-decoration: none;
 }
 
-li {
-  margin: 5px;
-}
 figure {
   display: inline-block;
-  border: 1px solid #ddd;
 }
 figcaption {
-  height: 120px;
+  height: 130px;
   padding-top: 20px;
 }
-.sponsors ul {
+#speakers {
+  text-align: center;
+}
+#speakers li {
+  position: relative;
+  width: 280px; height: 378px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+#speakers li article {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  padding: 10px 20px;
+  opacity: 0;
+  color: #fff;
+  font-size: 13px;
+}
+#speakers article p {
+  text-align: center;
+}
+#speakers li:hover article {
+  opacity: .9;
+  background: #333; background: rgba(0,0,0,0.9);
+}
+
+#sponsors ul {
   padding-bottom: 30px;
 }
-.sponsors li {
+#sponsors li {
   padding-right: 30px;
 }
 .gold_sponsors li {
@@ -166,12 +185,12 @@ table {
   margin: 0 auto;
   border-collapse: collapse;
   width: 100%;
-  max-width: 1000px;
+  max-width: 960px;
+  border-bottom: 1px solid #eee;
   font-size: 24px;
 }
 td {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #eee;
   padding: 10px;
   text-align: left;
 }
@@ -183,8 +202,7 @@ td:last-of-type {
 }
 table a img {
   display: block;
-  height: 100px;
-  width: auto;
+  width: 120px; height: auto;
   margin: 0 auto;
 }
 
@@ -194,10 +212,15 @@ footer {
   background-size: cover !important;
   background: url("http://2014.jsconfbr.org/images/people.jpg") no-repeat center 23%;
 }
-.team {
-  border: none;
-  padding: 10px 5%;
+.back_accent {
+  max-width: 100%;
   background: rgba(0, 0, 0, .7);
+}
+.team {
+  max-width: 960px;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
   color: #fff;
   text-align: left;
   font-weight: 300;
@@ -209,4 +232,48 @@ footer h1 {
 }
 footer h2 {
   font-weight: 600;
+}
+
+@media (max-width: 655px) {
+  nav {
+    display: none;
+  }
+  .title {
+    top: 0;
+    height: 300px;
+    margin-bottom: 0;
+    padding-top: 100px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  #tickets {
+    margin-top: 310px;
+  }
+
+  tr {
+    display: block;
+    position: relative;
+    border-top: 1px solid #eee;
+    padding-top: 80px;
+  }
+  td {
+    display: block;
+    border: none;
+  }
+  td:first-of-type {
+    position: absolute;
+    top: 10px; right: 0;
+  }
+  td:last-of-type {
+    position: absolute;
+    top: 0; left: 0;
+  }
+  table a img {
+    width: 80px;
+  }
+
+  footer h1 {
+    font-size: 36px;
+  }
 }
