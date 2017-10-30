@@ -54,29 +54,19 @@
           </a>
         </li>
         <li>
-          <a href="#">
-            <span class="todo_completed">02/15</span>
-          </a>
+          <a class="todo_completed" href="#">02/15</a>
         </li>
         <li>
-          <a href="#">
-            <span class="todo_completed">03/15</span>
-          </a>
+          <a class="todo_completed" href="#">03/15</a>
         </li>
         <li>
-          <a href="#">
-            <span class="todo_completed">04/15</span>
-          </a>
+          <a class="todo_completed" href="#">04/15</a>
         </li>
         <li>
-          <a href="#">
-            <span class="todo_completed">05/15</span>
-          </a>
+          <a class="todo_completed" href="#">05/15</a>
         </li>
         <li>
-          <a href="#">
-            <span class="todo_completed">06/14</span>
-          </a>
+          <a class="todo_completed" href="#">06/14</a>
         </li>
       </ul>
     </nav>
@@ -95,97 +85,96 @@
           <a class="add_item" href="#"><span class="plus">&#65291;</span> Add new to do</a>
         </li>
         <li>
-          <label>
-            <input type="checkbox" name="item1" id="item1">
-            Item 1
-            <form class="modal" action="#" method="post">
-              <dl>
-                <dt>
-                  <label for="title">Title</label>
-                </dt><!--
-             --><dd>
-                  <input type="text" name="title" id="title" value="Item 2">
-                </dd>
-              </dl>
-              <dl>
-                <dt>
-                  <label>Due Date</label>
-                </dt><!--
-             --><dd>
-                  <select name="due_day">
-                    <option disabled>Day</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option selected>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                  </select><!--
-               --><span>/</span><!--
-               --><select name="due_month">
-                    <option selected disabled>Month</option>
-                    <option>Jan</option>
-                    <option>Feb</option>
-                    <option>Mar</option>
-                    <option>Apr</option>
-                    <option>May</option>
-                    <option>Jun</option>
-                    <option>Jul</option>
-                    <option>Aug</option>
-                    <option>Sep</option>
-                    <option>Oct</option>
-                    <option>Nov</option>
-                    <option>Dec</option>
-                  </select><!--
-               --><span>/</span><!--
-               --><select name="due_year">
-                    <option selected disabled>Year</option>
-                    <option>2016</option>
-                    <option>2017</option>
-                    <option>2018</option>
-                    <option>2019</option>
-                    <option>2020</option>
-                  </select>
-                </dd>
-              </dl>
-              <dl>
-                <dt>
-                  <label for="description">Description</label>
-                </dt><!--
-             --><dd>
-                  <textarea name="description" id="description" rows="6" cols="50" placeholder="Description"></textarea><!--
-             --></dd><!--
-           --></dl>
-              
-              <button id="save">Save</button>
-              <button id="mark_as_complete">Mark as Complete</button>
-               
-            </form>
-          </label>
+          <input type="checkbox" name="item1" id="item1">
+          <label for="item1">Item 1</label>
+          
+          <form class="modal" action="#" method="post">
+            <dl>
+              <dt>
+                <label for="title">Title</label>
+              </dt><!--
+           --><dd>
+                <input type="text" name="title" id="title" value="Item 2">
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label>Due Date</label>
+              </dt><!--
+           --><dd>
+                <select name="due_day" id="due_day">
+                  <option disabled>Day</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option selected>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select><!--
+             --><span>/</span><!--
+             --><select name="due_month" id="due_month">
+                  <option selected disabled>Month</option>
+                  <option>Jan</option>
+                  <option>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+                  <option>May</option>
+                  <option>Jun</option>
+                  <option>Jul</option>
+                  <option>Aug</option>
+                  <option>Sep</option>
+                  <option>Oct</option>
+                  <option>Nov</option>
+                  <option>Dec</option>
+                </select><!--
+             --><span>/</span><!--
+             --><select name="due_year" id="due_year">
+                  <option selected disabled>Year</option>
+                  <option>2016</option>
+                  <option>2017</option>
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                </select>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <label for="description">Description</label>
+              </dt><!--
+           --><dd>
+                <textarea name="description" id="description" rows="6" cols="50" placeholder="Description"></textarea><!--
+           --></dd><!--
+         --></dl>
+            
+            <button id="save">Save</button>
+            <button id="mark_as_complete">Mark as Complete</button>
+          </form>
+          
           <a class="delete_item" href="#"></a>
         </li>
         <li>

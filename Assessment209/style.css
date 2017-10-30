@@ -35,13 +35,14 @@ nav .all {
   margin-bottom: 5px;
 }
 
-.todo_date,
-.todo_completed {
+.todo_date {
   display: inline-block;
   width: 125px;
 }
 .todo_completed {
+  display: inline-block;
   text-decoration: line-through;
+  width: 100%;
 }
 .todo_num {
   float: right;
@@ -138,14 +139,14 @@ li input[type="checkbox"] {
   margin-top: 2px;
   margin-right: 10px;
 }
+li label {
+  width: 90%;
+}
 li label.disabled {
   color: #b3b3b3;
   text-decoration: line-through;
 }
-li label {
-  width: 90%;
-}
-li label:not(.disabled):hover {
+li > label:not(.disabled):hover {
   color: #148fd5;
   cursor: pointer;
 }
@@ -212,9 +213,6 @@ a.add_item .plus {
   padding: 8px 10px;
   font-size: 16px;
 }
-select option:invalid {
-  color: #888;
-}
 .modal select + span {
   display: inline-block;
   width: 6.5%;
@@ -234,11 +232,10 @@ select option:invalid {
   margin-right: 13px;
 }
 
-option[data-default] { color: #888; }
-#item1:checked + .modal {
+#item1:checked ~ .modal {
   display: block;
 }
-#item1:checked:after {
+#item1:checked + label:after {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   content: "";
@@ -249,9 +246,6 @@ option[data-default] { color: #888; }
 /** RESPONSIVE styles **/
 
 @media (max-width: 768px) {
-  main {
-    right: 50px;
-  }
   .hamburger {
     visibility: visible;
   }
