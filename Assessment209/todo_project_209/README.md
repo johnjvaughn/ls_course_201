@@ -1,5 +1,5 @@
-#LS 209 Assessment
-##Todo project
+# LS 209 Assessment
+## Todo project
 
 Notes:
 1. The checkboxes in the given samples look a little different than the default checkboxes in my browser.  I assumed I did not need to customize them, but can do that if it was intended.
