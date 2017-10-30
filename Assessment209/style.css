@@ -1,0 +1,150 @@
+@import url("whitespace-reset.css");
+
+body {
+  width: 1200px;
+  background: #ffffff;
+  font: normal 15px Helvetica, Arial, sans-serif;
+}
+
+nav {
+  display: inline-block;
+  width: 333px;
+  padding-bottom: 200px;
+  padding-top: 15px;
+  color: #b2b5c3;
+  background: #464f77;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  margin-top: 50px;
+}
+
+nav a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%; height: 40px;
+  padding: 10px 30px 0 130px;
+  text-decoration: none;
+  color: inherit;
+}
+nav a.active_todo {
+  color: #ffffff;
+  background: #383f5f;
+}
+
+.todo_date,
+.todo_completed {
+  display: inline-block;
+  width: 125px;
+}
+.todo_completed {
+  text-decoration: line-through;
+}
+
+.todo_num {
+  display: inline-block;
+  float: right;
+  border-radius: 50%;
+  padding: 2px 5px;
+  text-align: right;
+  color: #b2b5c3;
+  background: #6b7292;
+}
+.active_todo .todo_num {
+  color: #ffffff;
+  background: #148fd5;
+}
+
+h1 {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 155px;
+  margin-left: -35px;
+  padding: 5px 0 5px 35px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  background: transparent url("list_icon.png") no-repeat;
+}
+h1.completed {
+  background: transparent url("completed_icon.png") no-repeat;
+}
+
+main {
+  display: inline-block;
+  position: absolute;
+  left: 333px; top: 0; right: 100px;
+  max-width: 750px;
+  min-width: 200px;
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  vertical-align: top;
+}
+.nav_menu {
+  display: block;
+  margin: 0 0 35px 10px;
+}
+h2 {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+h2 + .todo_num {
+  float: none;
+  margin: 0 0 25px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #148fd5;
+}
+main li {
+  display: block;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  width: 100%; height: 50px;
+  padding: 15px 10px;
+}
+main li:first-of-type {
+  border: none;
+}
+li.all {
+  margin-bottom: 5px;
+}
+li input[type="checkbox"] {
+  float: left;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+/*li input[disabled] + label {*/
+li label.disabled {
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+li label {
+  float: left;
+  /*margin: 0 0 0 5px;*/
+}
+li label:not(.disabled):hover {
+  color: #148fd5;
+  cursor: pointer;
+}
+a.delete_item {
+  float: right;
+  width: 16px; height: 17px;
+  background: transparent url("trash_can.png") no-repeat;
+}
+a.add_item {
+  color: #148fd5;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+}
+a.add_item .plus {
+  padding-right: 10px;
+}
+
+
+
