@@ -6,20 +6,19 @@ body {
   font: normal 15px Helvetica, Arial, sans-serif;
 }
 
+/** NAV styles **/
+
 nav {
   display: inline-block;
   width: 333px;
-  padding-bottom: 200px;
-  padding-top: 15px;
+  padding: 15px 0 200px 0;
+  letter-spacing: 1px;
   color: #b2b5c3;
   background: #464f77;
-  letter-spacing: 1px;
 }
-
 nav ul {
   margin-top: 50px;
 }
-
 nav a {
   box-sizing: border-box;
   display: block;
@@ -43,7 +42,6 @@ nav a.active_todo {
 }
 
 .todo_num {
-  display: inline-block;
   float: right;
   border-radius: 50%;
   padding: 2px 5px;
@@ -71,10 +69,12 @@ h1.completed {
   background: transparent url("completed_icon.png") no-repeat;
 }
 
+/** MAIN styles **/
+
 main {
-  display: inline-block;
   position: absolute;
   left: 333px; top: 0; right: 100px;
+  box-sizing: border-box;
   max-width: 750px;
   min-width: 200px;
   padding: 20px 20px;
@@ -83,10 +83,23 @@ main {
   color: #000000;
   vertical-align: top;
 }
-.nav_menu {
+.hamburger {
   display: block;
   margin: 0 0 35px 10px;
+  cursor: pointer;
+  visibility: hidden;
 }
+#menu-toggle {
+  display: none;
+}
+#menu-toggle:checked + nav {
+  display: none;
+}
+#menu-toggle:checked ~ main {
+  left: 0;
+  max-width: 1200px;
+}
+
 h2 {
   display: inline-block;
   margin-bottom: 25px;
@@ -101,6 +114,10 @@ h2 + .todo_num {
   color: #ffffff;
   background: #148fd5;
 }
+main ul {
+  display: inline-block;
+  width: 100%; 
+}
 main li {
   display: block;
   box-sizing: border-box;
@@ -111,22 +128,19 @@ main li {
 main li:first-of-type {
   border: none;
 }
-li.all {
+main li.all {
   margin-bottom: 5px;
 }
 li input[type="checkbox"] {
-  float: left;
   margin-top: 2px;
   margin-right: 10px;
 }
-/*li input[disabled] + label {*/
 li label.disabled {
   color: #b3b3b3;
   text-decoration: line-through;
 }
 li label {
-  float: left;
-  /*margin: 0 0 0 5px;*/
+  width: 90%;
 }
 li label:not(.disabled):hover {
   color: #148fd5;
@@ -144,6 +158,17 @@ a.add_item {
 }
 a.add_item .plus {
   padding-right: 10px;
+}
+
+/** RESPONSIVE styles **/
+
+@media (max-width: 768px) {
+  main {
+    right: 50px;
+  }
+  .hamburger {
+    visibility: visible;
+  }
 }
 
 
