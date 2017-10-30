@@ -1,7 +1,7 @@
 @import url("whitespace-reset.css");
 
 body {
-  width: 1200px;
+  /*width: 1200px;*/
   background: #ffffff;
   font: normal 15px Helvetica, Arial, sans-serif;
 }
@@ -23,13 +23,16 @@ nav a {
   box-sizing: border-box;
   display: block;
   width: 100%; height: 40px;
-  padding: 10px 30px 0 130px;
+  padding: 10px 30px 0 140px;
   text-decoration: none;
   color: inherit;
 }
 nav a.active_todo {
   color: #ffffff;
   background: #383f5f;
+}
+nav .all {
+  margin-bottom: 5px;
 }
 
 .todo_date,
@@ -40,12 +43,12 @@ nav a.active_todo {
 .todo_completed {
   text-decoration: line-through;
 }
-
 .todo_num {
   float: right;
-  border-radius: 50%;
-  padding: 2px 5px;
+  border-radius: 100%;
+  padding: 1px 4px 0 5px;
   text-align: right;
+  font-size: 14px;
   color: #b2b5c3;
   background: #6b7292;
 }
@@ -58,10 +61,10 @@ h1 {
   display: inline-block;
   box-sizing: border-box;
   width: 155px;
-  margin-left: -35px;
+  margin-left: -38px;
   padding: 5px 0 5px 35px;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 100;
   color: #ffffff;
   background: transparent url("list_icon.png") no-repeat;
 }
@@ -75,7 +78,6 @@ main {
   position: absolute;
   left: 333px; top: 0; right: 100px;
   box-sizing: border-box;
-  max-width: 750px;
   min-width: 200px;
   padding: 20px 20px;
   font-size: 16px;
@@ -104,8 +106,9 @@ h2 {
   display: inline-block;
   margin-bottom: 25px;
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: normal;
+  letter-spacing: .5px;
 }
 h2 + .todo_num {
   float: none;
@@ -122,7 +125,7 @@ main li {
   display: block;
   box-sizing: border-box;
   border-top: 1px solid #ccc;
-  width: 100%; height: 50px;
+  width: 100%; height: 49px;
   padding: 15px 10px;
 }
 main li:first-of-type {
@@ -157,7 +160,90 @@ a.add_item {
   letter-spacing: 0.7px;
 }
 a.add_item .plus {
-  padding-right: 10px;
+  padding-right: 8px;
+}
+
+/** FORM **/
+.modal {
+  display: none;
+  position: fixed;
+  box-sizing: border-box;
+  top: 15%; right: 15%;
+  width: 570px; height: 400px;
+  padding: 35px 40px 0 30px;
+  font-size: 16px;
+  color: #000000;
+  background: #ffffff;
+  z-index: 2;
+}
+.modal dt,
+.modal dd {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.modal dt {
+  box-sizing: border-box;
+  width: 110px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+.modal dd {
+  width: 390px;
+  padding-bottom: 0;
+}
+.modal dl {
+  margin-bottom: 25px;
+}
+.modal input,
+.modal textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 10px;
+  resize: none;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+.modal textarea {
+  height: 145px;
+}
+.modal select {
+  box-sizing: border-box;
+  width: 29%;
+  padding: 8px 10px;
+  font-size: 16px;
+}
+select option:invalid {
+  color: #888;
+}
+.modal select + span {
+  display: inline-block;
+  width: 6.5%;
+  text-align: center;
+}
+.modal button {
+  width: 185px; height: 37px;
+  margin-top: -5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  background: #148fd5;
+}
+.modal #save {
+  margin-left: 110px;
+  margin-right: 13px;
+}
+
+option[data-default] { color: #888; }
+#item1:checked + .modal {
+  display: block;
+}
+#item1:checked:after {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  content: "";
+  background: rgba(0, 0, 0, .2);
+  z-index: 1;
 }
 
 /** RESPONSIVE styles **/
