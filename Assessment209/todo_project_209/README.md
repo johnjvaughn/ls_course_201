@@ -6,4 +6,4 @@ Notes:
 
 2. I assumed a steady 100px right margin on the main page (rather than a percentage margin), since it was 100px in the samples.
 
-3. I could not find a way to make the default values in the modal form's date selects appear gray on loading while keeping the other text in those menus black.  I might be assuming that the valid options are black when they don't have to be, since no screenshots of the menu options were provided.  But in any case, I may need a hint if this issue needs to be corrected.
+3. I could not find a way to make the default "placeholder" values in the modal form's date selects appear gray on loading while keeping the other text in those menus black.  I may need a hint if this issue needs to be corrected.
