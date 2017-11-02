@@ -57,8 +57,7 @@ nav .all {
 h1 {
   display: inline-block;
   box-sizing: border-box;
-  margin-top: 50px;
-  margin-left: 105px;
+  margin: 55px 0 5px 105px;
   padding: 5px 0 5px 35px;
   font-size: 18px;
   font-weight: 100;
@@ -66,7 +65,8 @@ h1 {
   background: transparent url("list_icon.png") no-repeat;
 }
 h1 + .todo_num {
-  margin: 55px 28px 0 0;
+  margin: 60px 28px 0 0;
+  padding: 1px 3px;
 }
 h1.completed {
   background: transparent url("completed_icon.png") no-repeat;
@@ -78,8 +78,8 @@ main {
   position: absolute;
   left: 333px; top: 0; right: 100px;
   box-sizing: border-box;
-  min-width: 200px;
-  padding: 20px 20px;
+  min-width: 210px;
+  padding: 15px 20px;
   font-size: 16px;
   font-weight: 500;
   color: #000000;
@@ -268,6 +268,10 @@ label[for="modal_switch"] {
   }
   .modal {
     right: calc(50% - 285px);
+  }
+  #menu-toggle:checked ~ main .modal {
+    left: calc(50% - 380px);
+    margin-left: -60px;
   }
 }
 
