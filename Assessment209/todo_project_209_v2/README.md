@@ -1,9 +1,7 @@
 # LS 209 Assessment
 ## Todo project
+### Revisions 11/2/2017
 
-Notes:
-1. The checkboxes in the given samples look a little different than the default checkboxes in my browser.  I assumed I did not need to customize them, but can do that if it was intended.
+Notes/Assumptions:
 
-2. I assumed a steady 100px right margin on the main page (rather than a percentage margin), since it was 100px in the samples.
-
-3. I could not find a way to make the default "placeholder" values in the modal form's date selects appear gray on loading while keeping the other text in those menus black.  I may need a hint if this issue needs to be corrected.
+1. Concerning the modal form box: The problem states it should be placed "proportionally" over the main area; however in my mind that does not exclude the possibility over over-hanging the main area, as long as it is placed proportionally.  And, at narrower screen sizes when the nav is checked on, the modal might hardly appear on screen at all if completely contained in the main area.  So I left the modal at a constant 570px by 400px.  This means at very narrow screen sizes below 570 it will not fit within the screen. However, the problem did not state a specific requirement for screens that small; only for "narrower screens 768px and below".

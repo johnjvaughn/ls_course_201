@@ -69,16 +69,18 @@
 
       <h2>02/16</h2>
       <span class="todo_num">8</span>
-
+      <input type="checkbox" id="modal_switch">
+      
       <ul>
         <li>
           <a class="add_item" href="#"><span class="plus">&#65291;</span> Add new to do</a>
         </li>
         <li>
-          <label for="item1">
-            <input type="checkbox" name="item1" id="item1">
+          <input type="checkbox" name="item1">
+          <label for="modal_switch">
             Item 1
           </label>
+          <div class="modal_background"></div>
           <a class="delete_item" href="#"></a>
         </li>
         <li>
@@ -139,10 +141,7 @@
         </li>
       </ul>
 
-      <input type="checkbox" id="modal_switch">
-      <label for="modal_switch">
-        <div class="modal_background"></div>
-      </label>
+      
       
       <form class="modal" action="#" method="post">
         <dl>
@@ -191,7 +190,7 @@
               <option>30</option>
               <option>31</option>
             </select><!--
-         --><span>/</span><!--
+         --><span class="date_spacing">/</span><!--
          --><select name="due_month" id="due_month">
               <option selected disabled>Month</option>
               <option>Jan</option>
@@ -207,7 +206,7 @@
               <option>Nov</option>
               <option>Dec</option>
             </select><!--
-         --><span>/</span><!--
+         --><span class="date_spacing">/</span><!--
          --><select name="due_year" id="due_year">
               <option selected disabled>Year</option>
               <option>2016</option>
